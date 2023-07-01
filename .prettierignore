@@ -1,0 +1,7 @@
+build
+node_modules
+!.eslintrc.cjs
+package.json
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
