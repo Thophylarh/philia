@@ -1,13 +1,17 @@
 import { createBrowserRouter } from 'react-router-dom';
-import { Home } from '@/pages';
+import { ErrorPage, Home, NotFound } from '@/pages';
 
-const allRoutes = [
+const router = createBrowserRouter([
     {
         path: '/',
         element: <Home />,
+        errorElement: <ErrorPage />,
+        hasErrorBoundary: true,
     },
-];
-
-const router = createBrowserRouter(allRoutes);
+    {
+        path: '*',
+        element: <NotFound />,
+    },
+]);
 
 export default router;
