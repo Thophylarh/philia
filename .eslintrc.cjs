@@ -35,8 +35,10 @@ module.exports = {
         ],
         'arrow-body-style': ['error', 'as-needed'],
         'react/react-in-jsx-scope': 'off',
-        'prettier/prettier': ['error', { singleQuote: true }],
+        // 'prettier/prettier': ['error', { singleQuote: true }],
+        'prettier/prettier': 0,
         'no-duplicate-imports': 'off',
+        'import/prefer-default-export': 'off',
         'no-console': 'warn',
     },
     settings: {
