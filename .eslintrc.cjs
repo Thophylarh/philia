@@ -22,6 +22,8 @@ module.exports = {
     },
     plugins: ['@typescript-eslint', 'prettier', 'react'],
     rules: {
+        'import/extensions': 'off',
+        'react/jsx-filename-extension': [1, { extensions: ['.js', '.ts', 'tsx'] }],
         indent: 'off',
         '@typescript-eslint/indent': 'off',
         'react/function-component-definition': [
@@ -40,6 +42,11 @@ module.exports = {
     settings: {
         react: {
             version: 'detect',
+        },
+        'import/resolver': {
+            typescript: {
+                alwaysTryTypes: true,
+            },
         },
     },
 };
