@@ -18,7 +18,7 @@ To get started with the project, follow these steps:
 1. Clone the repository:
 
     ```shell
-    git clone https://github.com/your-username/ecommerce-product.git
+    git clone https://github.com/Thophylarh/philia
     ```
 
 2. Change into the project directory:
@@ -36,7 +36,7 @@ To get started with the project, follow these steps:
     If you're using Yarn:
 
     ```shell
-    yarn install
+    yarn
     ```
 
 ## Usage
@@ -79,22 +79,19 @@ The folder structure of the project is as follows:
 ├── src
 │   ├── components
 │   ├── pages
-│   ├── styles
-│   ├── App.js
+│   ├── assets
 │   └── index.js
 ├── .eslintrc.js
 ├── .prettierrc.js
 ├── .husky
 │   └── pre-commit
-└── .lintstagedrc.js
 ```
 
 -   The `public` directory contains the static assets and the main HTML file.
 -   The `src` directory contains the main source code of the project.
     -   The `components` directory contains reusable React components.
     -   The `pages` directory contains the application's pages or screens.
-    -   The `styles` directory contains the global styles and CSS modules.
-    -   The `App.js` file is the entry point of the application.
+    -   The `assets` directory contains the global assets like media files (images, icons etc), styles and CSS modules.
     -   The `index.js` file is responsible for rendering the application.
 
 ## Linting and Code Formatting
